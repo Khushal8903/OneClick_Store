@@ -36,7 +36,7 @@ public class Orders {
 		return orderDate;
 	}
 	public void setOrderDate(Date orderDate) {
-		this.order_date = orderDate;
+		this.orderDate = orderDate;
 	}
 	
 }
