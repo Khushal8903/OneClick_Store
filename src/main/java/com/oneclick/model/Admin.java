@@ -1,16 +1,16 @@
 package com.oneclick.model;
 
 public class Admin{
-	private int admin_id;
+	private int adminId;
 	private String userName;
 	private String email;
 	private String password;
 	
 	public int getAdminId() {
-		return admin_id;
+		return adminId;
 	}
 	public void setAdminId(int id) {
-		this.admin_id = id;
+		this.adminId = id;
 	}
 	public String getUserName() {
 		return userName;

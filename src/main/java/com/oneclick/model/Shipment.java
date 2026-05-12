@@ -3,40 +3,40 @@ package com.oneclick.model;
 import java.util.Date;
 
 public class Shipment {
-	private int shipment_id;
-	private int order_id;
-	private String shipment_status;
-	private String tracking_number;
-	private Date shipment_date;
-	public int getShipment_id() {
-		return shipment_id;
+	private int shipmentId;
+	private int orderId;
+	private String shipmentStatus;
+	private String trackingNumber;
+	private Date shipmentDate;
+	public int getShipmentId() {
+		return shipmentId;
 	}
-	public void setShipment_id(int shipment_id) {
-		this.shipment_id = shipment_id;
+	public void setShipmentId(int shipmentId) {
+		this.shipmentId = shipmentId;
 	}
-	public int getOrder_id() {
-		return order_id;
+	public int getOrderId() {
+		return orderId;
 	}
-	public void setOrder_id(int order_id) {
-		this.order_id = order_id;
+	public void setOrderId(int orderId) {
+		this.orderId = orderId;
 	}
-	public String getShipment_status() {
-		return shipment_status;
+	public String getShipmentStatus() {
+		return shipmentStatus;
 	}
-	public void setShipment_status(String shipment_status) {
-		this.shipment_status = shipment_status;
+	public void setShipmentStatus(String shipmentStatus) {
+		this.shipmentStatus = shipmentStatus;
 	}
-	public String getTracking_number() {
-		return tracking_number;
+	public String getTrackingNumber() {
+		return trackingNumber;
 	}
-	public void setTracking_number(String tracking_number) {
-		this.tracking_number = tracking_number;
+	public void setTrackingNumber(String trackingNumber) {
+		this.trackingNumber = trackingNumber;
 	}
-	public Date getShipment_date() {
-		return shipment_date;
+	public Date getShipmentDate() {
+		return shipmentDate;
 	}
-	public void setShipment_date(Date shipment_date) {
-		this.shipment_date = shipment_date;
+	public void setShipmentDate(Date shipmentDate) {
+		this.shipmentDate = shipmentDate;
 	}
 	
 	
