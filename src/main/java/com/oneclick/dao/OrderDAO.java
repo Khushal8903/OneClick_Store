@@ -1,16 +1,16 @@
 package com.oneclick.dao;
 
-import com.oneclick.model.Cart;
+import com.oneclick.model.Orders;
 import com.oneclick.util.DBConnection;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CartDAO {
+public class OrderDAO {
 
-    // ADD TO CART
-    public boolean addToCart(Cart cart) {
+    // PLACE ORDER
+    public boolean placeOrder(Orders order) {
 
         boolean status = false;
 
@@ -19,14 +19,14 @@ public class CartDAO {
             Connection con = DBConnection.getConnection();
 
             String query =
-                    "INSERT INTO cart(customer_id,product_id,quantity) VALUES(?,?,?)";
+                    "INSERT INTO orders(customer_id,total_amount,status) VALUES(?,?,?)";
 
             PreparedStatement ps =
                     con.prepareStatement(query);
 
-            ps.setInt(1, cart.getCustomerId());
-            ps.setInt(2, cart.getProductId());
-            ps.setInt(3, cart.getQuantity());
+            ps.setInt(1, order.getCustomerId());
+            ps.setDouble(2, order.getTotalAmount());
+            ps.setString(3, order.getOrdersStatus());
 
             int rows = ps.executeUpdate();
 
@@ -44,17 +44,17 @@ public class CartDAO {
         return status;
     }
 
-    // GET CART ITEMS
-    public List<Cart> getCartItems(int customerId) {
+    // GET USER ORDERS
+    public List<Orders> getOrdersByCustomer(int customerId) {
 
-        List<Cart> cartList = new ArrayList<>();
+        List<Orders> orderList = new ArrayList<>();
 
         try {
 
             Connection con = DBConnection.getConnection();
 
             String query =
-                    "SELECT * FROM cart WHERE customer_id=?";
+                    "SELECT * FROM orders WHERE customer_id=?";
 
             PreparedStatement ps =
                     con.prepareStatement(query);
@@ -65,14 +65,14 @@ public class CartDAO {
 
             while (rs.next()) {
 
-                Cart cart = new Cart();
+                Orders order = new Orders();
 
-                cart.setCartId(rs.getInt("cart_id"));
-                cart.setCustomerId(rs.getInt("customer_id"));
-                cart.setProductId(rs.getInt("product_id"));
-                cart.setQuantity(rs.getInt("quantity"));
+                order.setOrdersId(rs.getInt("order_id"));
+                order.setCustomerId(rs.getInt("customer_id"));
+                order.setTotalAmount(rs.getDouble("total_amount"));
+                order.setOrdersStatus(rs.getString("status"));
 
-                cartList.add(cart);
+                orderList.add(order);
             }
 
             rs.close();
@@ -83,6 +83,6 @@ public class CartDAO {
             e.printStackTrace();
         }
 
-        return cartList;
+        return orderList;
     }
 }

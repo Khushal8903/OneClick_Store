@@ -24,7 +24,7 @@ public class ProductDAO {
             PreparedStatement ps =
                     con.prepareStatement(query);
 
-            ps.setInt(1, product.getCategoryid());
+            ps.setInt(1, product.getCategoryId());
             ps.setString(2, product.getName());
             ps.setDouble(3, product.getPrice());
             ps.setInt(4, product.getStock());
@@ -69,7 +69,7 @@ public class ProductDAO {
                 Product product = new Product();
 
                 product.setProductId(rs.getInt("product_id"));
-                product.setCategoryid(rs.getInt("category_id"));
+                product.setCategoryId(rs.getInt("category_id"));
                 product.setName(rs.getString("product_name"));
                 product.setPrice(rs.getDouble("price"));
                 product.setStock(rs.getInt("stock"));
@@ -115,7 +115,7 @@ public class ProductDAO {
                 product = new Product();
 
                 product.setProductId(rs.getInt("product_id"));
-                product.setCategoryid(rs.getInt("category_id"));
+                product.setCategoryId(rs.getInt("category_id"));
                 product.setName(rs.getString("product_name"));
                 product.setPrice(rs.getDouble("price"));
                 product.setStock(rs.getInt("stock"));
