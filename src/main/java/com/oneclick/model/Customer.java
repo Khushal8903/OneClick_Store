@@ -5,9 +5,20 @@ public class Customer {
 	private int customerId;
 	private String name;
 	private String email;
-	private String passward;
+	private String password;
 	private String contact;
 	private String address;
+	
+	public Customer(String name, String email, String password, String contact, String address) {
+		this.name = name;
+		this.email=email;
+		this.password=password;
+		this.contact = contact;
+		this.address=address;
+	}
+	public Customer() {
+		
+	}
 	public int getCustomerId() {
 		return customerId;
 	}
@@ -27,10 +38,10 @@ public class Customer {
 		this.email = email;
 	}
 	public String getPassward() {
-		return passward;
+		return password;
 	}
 	public void setPassward(String passward) {
-		this.passward = passward;
+		this.password = passward;
 	}
 	public String getContact() {
 		return contact;
