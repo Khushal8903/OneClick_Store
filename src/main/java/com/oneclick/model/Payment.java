@@ -5,7 +5,7 @@ import java.util.*;
 public class Payment {
 	private int paymentId;
 	private int orderId;
-	private int transactionId;
+	private String transactionId;
 	private String paymentMethod;
 	private String paymentStatus;
 	private double amount;
@@ -24,10 +24,10 @@ public class Payment {
 	public void setOrderId(int orderId) {
 		this.orderId = orderId;
 	}
-	public int getTransactionId() {
+	public String getTransactionId() {
 		return transactionId;
 	}
-	public void setTransactionId(int transactionId) {
+	public void setTransactionId(String transactionId) {
 		this.transactionId = transactionId;
 	}
 	public String getPaymentMethod() {
