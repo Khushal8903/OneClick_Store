@@ -5,11 +5,9 @@
     --white-c: #ffffff;
     --text-c: #333333;
     --border-c: #d1d5db;
-
     --header-footer-bg: #111827;
     --header-footer-text: #ffffff;
     --header-hover-color: #60a5fa;
-
     --b-r: 8px;
     --pd: 10px;
     --font-family: Arial, sans-serif;
@@ -20,7 +18,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+ nav ul{
+    width: 6%;
+ }
+ nav ul li, nav ul li a{
+    width: 100%;
+    margin: 0 !important;
+    padding-left: 5px !important;
+}
 body {
     margin: 0;
     padding: 0;
@@ -30,7 +35,12 @@ body {
 
 .logo{
     text-decoration: none;
-    color: var(--white-c);
+    color: var(--header-footer-text);
+    font-size: 25px;
+}
+.logo:hover{
+    text-decoration: none;
+    color: var(--header-footer-text);
 }
 
 .main-header {
