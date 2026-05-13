@@ -5,7 +5,6 @@ public class WishList {
 	private int customerId;
 	private int productId;
 	
-	
 	public int getWishlistId() {
 		return wishlistId;
 	}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add Product</title>
+<link rel="stylesheet" href="headerFooter.css">
+
+</head>
+<body>
+    <div class="sidebar">
+
+        <h2 class="logo">Admin Panel</h2>
+
+        <ul>
+
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="addProduct.html">Add Product</a></li>
+            <li><a href="manageProduct.html">Manage Product</a></li>
+            <li><a href="orders.html">Orders</a></li>
+            <li><a href="customer.html">Customers</a></li>
+            <li><a href="shiping.html">Shipment</a></li>
+
+        </ul>
+
+    </div>
+<div class="main-content">
+
+    <div class="header">
+
+        <h1>Add Product</h1>
+
+    </div>
+
+    <div class="card">
+
+        <form>
+
+            <div class="form-group">
+                <label>Product Name</label>
+                <input type="text" name="pname" value="">
+            </div>
+            <div class="form-group">
+                <label>Img Url</label>
+                <input type="text" name="purl" value="">
+            </div>
+            <div class="form-group">
+                <label>Brand</label>
+                <input type="text" name="pbrand" value="">
+            </div>
+
+            <div class="form-group">
+                <label>Description</label>
+                <textarea rows="5" name="pdesc" value=""></textarea>
+            </div>
+            
+
+            <div class="form-group">
+                <label>Price</label>
+                <input type="number" name="pprice" value="">
+            </div>
+
+            <div class="form-group">
+                <label>Stock</label>
+                <input type="number" name="pstock" value="">
+            </div>
+
+            <div class="form-group">
+                <label>Category</label>
+
+                <select name="category">
+                    <option value="Electronics">Electronics</option>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Grocery">Grocery</option>
+                </select>
+            </div>
+
+            <button class="btn btn-success">
+                Add Product
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
