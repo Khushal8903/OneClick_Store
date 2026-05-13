@@ -1,13 +1,20 @@
 :root {
+   
+    --sidebar-width: 250px;
+
+    
     --p-c: #2563eb;
     --s-c: #1e40af;
+    --success-c: #16a34a;
+    --danger-c: #dc2626;
+    --warning-c: #f59e0b;
     --bg-c: #f3f4f6;
     --white-c: #ffffff;
     --text-c: #333333;
     --border-c: #d1d5db;
     --header-footer-bg: #111827;
     --header-footer-text: #ffffff;
-    --header-hover-color: #60a5fa;
+    --header-hover-color: #394663;
     --b-r: 8px;
     --pd: 10px;
     --font-family: Arial, sans-serif;
