@@ -2,17 +2,17 @@ package com.oneclick.model;
 
 
 public class Customer {
-	private int customer_id;
+	private int customerId;
 	private String name;
 	private String email;
 	private String passward;
 	private String contact;
 	private String address;
 	public int getCustomerId() {
-		return customer_id;
+		return customerId;
 	}
 	public void setCustomerId(int id) {
-		this.customer_id = id;
+		this.customerId = id;
 	}
 	public String getName() {
 		return name;

@@ -3,29 +3,29 @@ package com.oneclick.model;
 import java.util.Date;
 
 public class Review {
-	private int review_id;
-	private int customer_id;
-	private int product_id;
+	private int reviewId;
+	private int customerId;
+	private int productId;
 	private int rating;
 	private String text;
-	private Date review_date;
-	public int getReview_id() {
-		return review_id;
+	private Date reviewDate;
+	public int getRevieIid() {
+		return reviewId;
 	}
-	public void setReview_id(int review_id) {
-		this.review_id = review_id;
+	public void setReviewId(int reviewId) {
+		this.reviewId = reviewId;
 	}
-	public int getCustomer_id() {
-		return customer_id;
+	public int getCustomerId() {
+		return customerId;
 	}
-	public void setCustomer_id(int customer_id) {
-		this.customer_id = customer_id;
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
 	}
-	public int getProduct_id() {
-		return product_id;
+	public int getProductId() {
+		return productId;
 	}
-	public void setProduct_id(int product_id) {
-		this.product_id = product_id;
+	public void setProductId(int productId) {
+		this.productId = productId;
 	}
 	public int getRating() {
 		return rating;
@@ -39,11 +39,11 @@ public class Review {
 	public void setText(String text) {
 		this.text = text;
 	}
-	public Date getReview_date() {
-		return review_date;
+	public Date getReviewDate() {
+		return reviewDate;
 	}
-	public void setReview_date(Date review_date) {
-		this.review_date = review_date;
+	public void setReviewDate(Date reviewDate) {
+		this.reviewDate = reviewDate;
 	}
 	
 	

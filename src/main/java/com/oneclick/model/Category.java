@@ -2,14 +2,14 @@ package com.oneclick.model;
 
 public class Category {
 	
-	private int category_id;
+	private int categoryId;
 	private String name;
 	
 	public int getCategoryId() {
-		return category_id;
+		return categoryId;
 	}
 	public void setCategoryId(int id) {
-		this.category_id = id;
+		this.categoryId = id;
 	}
 	public String getName() {
 		return name;

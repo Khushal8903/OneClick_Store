@@ -1,20 +1,20 @@
 package com.oneclick.model;
 
 public class Product {
-	private int product_id;
+	private int productId;
 	private String name;
 	private int stock;
 	private double price;
-	private int category_id;
+	private int categoryId;
 	private String desc;
 	private String imgUrl;
 	private String brand;
 	
 	public int getProductId() {
-		return product_id;
+		return productId;
 	}
 	public void setProductId(int id) {
-		this.product_id = id;
+		this.productId = id;
 	}
 	public String getName() {
 		return name;
@@ -34,11 +34,11 @@ public class Product {
 	public void setPrice(double price) {
 		this.price = price;
 	}
-	public int getCategoryid() {
-		return category_id;
+	public int getCategoryId() {
+		return categoryId;
 	}
-	public void setCategoryid(int category_id) {
-		this.category_id = category_id;
+	public void setCategoryId(int categoryId) {
+		this.categoryId = categoryId;
 	}
 	public String getDesc() {
 		return desc;

@@ -1,28 +1,28 @@
 package com.oneclick.model;
 
 public class Cart {
-	private int cartid;
-	private int customerid;
-	private int productid;
+	private int cartId;
+	private int customerId;
+	private int productId;
 	private int quantity;
 	
-	public int getCartid() {
-		return cartid;
+	public int getCartId() {
+		return cartId;
 	}
-	public void setCartid(int cartid) {
-		this.cartid = cartid;
+	public void setCartId(int cartId) {
+		this.cartId = cartId;
 	}
-	public int getCustomerid() {
-		return customerid;
+	public int getCustomerId() {
+		return customerId;
 	}
-	public void setCustomerid(int customerid) {
-		this.customerid = customerid;
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
 	}
-	public int getProductid() {
-		return productid;
+	public int getProductId() {
+		return productId;
 	}
-	public void setProductId(int productid) {
-		this.productid = productid;
+	public void setProductId(int productId) {
+		this.productId = productId;
 	}
 	public int getQuantity() {
 		return quantity;

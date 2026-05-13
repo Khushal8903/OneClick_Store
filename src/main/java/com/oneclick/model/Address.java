@@ -1,31 +1,31 @@
 package com.oneclick.model;
 
 public class Address {
-	private int address_id;
-	private int customer_id;
-	private String full_address;
+	private int addressId;
+	private int customerId;
+	private String fullAddress;
 	private String city;
 	private String state;
 	private String pincode;
 	private String country;
 	
-	public int getAddress_id() {
-		return address_id;
+	public int getAddressId() {
+		return addressId;
 	}
-	public void setAddress_id(int address_id) {
-		this.address_id = address_id;
+	public void setAddressId(int addressId) {
+		this.addressId = addressId;
 	}
-	public int getCustomer_id() {
-		return customer_id;
+	public int getCustomerId() {
+		return customerId;
 	}
-	public void setCustomer_id(int customer_id) {
-		this.customer_id = customer_id;
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
 	}
-	public String getFull_address() {
-		return full_address;
+	public String getFullAddress() {
+		return fullAddress;
 	}
-	public void setFull_address(String full_address) {
-		this.full_address = full_address;
+	public void setFullAddress(String fullAddress) {
+		this.fullAddress = fullAddress;
 	}
 	public String getCity() {
 		return city;

@@ -3,44 +3,44 @@ package com.oneclick.model;
 import java.util.*;
 
 public class Payment {
-	private int payment_id;
-	private int order_id;
-	private int transaction_id;
-	private String payment_method;
-	private String payment_status;
+	private int paymentId;
+	private int orderId;
+	private int transactionId;
+	private String paymentMethod;
+	private String paymentStatus;
 	private double amount;
 	private String currency;
-	private Date payment_date;
+	private Date paymentDate;
 	
-	public int getPayment_id() {
-		return payment_id;
+	public int getPaymentId() {
+		return paymentId;
 	}
-	public void setPayment_id(int payment_id) {
-		this.payment_id = payment_id;
+	public void setPaymentId(int paymentId) {
+		this.paymentId = paymentId;
 	}
-	public int getOrder_id() {
-		return order_id;
+	public int getOrderId() {
+		return orderId;
 	}
-	public void setOrder_id(int order_id) {
-		this.order_id = order_id;
+	public void setOrderId(int orderId) {
+		this.orderId = orderId;
 	}
-	public int getTransaction_id() {
-		return transaction_id;
+	public int getTransactionId() {
+		return transactionId;
 	}
-	public void setTransaction_id(int transaction_id) {
-		this.transaction_id = transaction_id;
+	public void setTransactionId(int transactionId) {
+		this.transactionId = transactionId;
 	}
-	public String getPayment_method() {
-		return payment_method;
+	public String getPaymentMethod() {
+		return paymentMethod;
 	}
-	public void setPayment_method(String payment_method) {
-		this.payment_method = payment_method;
+	public void setPaymentMethod(String paymentMethod) {
+		this.paymentMethod = paymentMethod;
 	}
-	public String getPayment_status() {
-		return payment_status;
+	public String getPaymentStatus() {
+		return paymentStatus;
 	}
-	public void setPayment_status(String payment_status) {
-		this.payment_status = payment_status;
+	public void setPaymentStatus(String paymentStatus) {
+		this.paymentStatus = paymentStatus;
 	}
 	public double getAmount() {
 		return amount;
@@ -54,11 +54,11 @@ public class Payment {
 	public void setCurrency(String currency) {
 		this.currency = currency;
 	}
-	public Date getPayment_date() {
-		return payment_date;
+	public Date getPaymentDate() {
+		return paymentDate;
 	}
-	public void setPayment_date(Date payment_date) {
-		this.payment_date = payment_date;
+	public void setPaymentDate(Date paymentDate) {
+		this.paymentDate = paymentDate;
 	}
 		
 }
