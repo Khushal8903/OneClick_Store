@@ -1,0 +1,55 @@
+/* user Login page */
+
+.form-container {
+    width: 350px;
+    margin: 50px auto;
+    padding: 25px;
+    background: var(--bg-c);
+    border-radius: var(--b-r);
+    box-shadow: var(--box-shadow);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: var(--p-c);
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-c);
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 100%;
+    height: 36px;
+    padding: var(--pd);
+    border: 1px solid var(--border-c);
+    border-radius: var(--b-r);
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border: none;
+    border-color: var(--p-c);
+}
+
+
+
+button[type="submit"]:hover {
+    background: var(--s-c);
+}
+
+@media screen and (max-width: 400px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+}

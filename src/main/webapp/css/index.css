@@ -23,16 +23,12 @@ video{
     text-align: center;
 }
 .hero-content h1{
-
     font-size: 55px;
-
     margin-bottom: 20px;
 }
 
 .hero-content p{
-
     font-size: 22px;
-
     margin-bottom: 25px;
 }
 
@@ -45,26 +41,19 @@ video{
     gap: 25px;
 }
 .card h2{
-
     margin-bottom: 15px;
-
-    color: var(--primary-color);
+    color: var(--p-c);
 }
 
 .home-products{
-
     width: 90%;
-
     margin: 60px auto;
 }
 
 .section-title{
-
     text-align: center;
-
     margin-bottom: 40px;
-
-    color: var(--primary-color);
+    color: var(--p-c);
 }
 .product-container{
 
@@ -90,7 +79,7 @@ video{
 
     object-fit: cover;
 
-    border-radius: var(--border-radius);
+    border-radius: var(--b-r);
 }
 
 .product-card h3{
@@ -100,7 +89,7 @@ video{
 
 .price{
 
-    color: var(--primary-color);
+    color: var(--p-c);
 
     font-size: 22px;
 
